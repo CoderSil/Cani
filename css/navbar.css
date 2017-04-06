@@ -1,0 +1,79 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 900;
+    background-color: #141516;
+    z-index: 999;
+}
+
+/* Gère les marges du menu */
+.navbar ul li {
+    padding: 5px 10px 0;
+}
+
+/* Rend la barre de menu horizontale */
+.list-inline>li {
+    display: inline-block;
+}
+
+/* Style du texte du menu */
+.navbar ul li a {
+    padding: 5px 1px 5px 1px;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out !important;
+}
+
+/* Rend le texte du lien jaune lorsque la souris passe dessus */
+.navbar ul li a:hover {
+    color: #F7B83C !important;
+	transition: width 0.5s ease-in-out !important;
+}
+
+/* Gère le fait que la ligne jaune reste sous le bouton de la page active */
+.navbar ul li.active a:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+}
+
+/* Gère la petite ligne jaune sous les liens lors du passage de la souris */
+.navbar ul li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to left,#FFDF22,#F7B83C);
+    transition: width 0.5s ease-in-out !important;
+}
+
+/* Gère la position du bouton contact */
+.navbar .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 25px;
+}
+
+/* Style du bouton contact */
+.btn {
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    background-color: #F7B83C;
+    background-image: linear-gradient(to left,#FFDF22,#F7B83C);
+    border: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    color: #000000;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+}

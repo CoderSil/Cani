@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+        
+<html ng-app="routeApp">
+    <head>
+        <title>Essai AngularJS</title>
+            
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="angular-route.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        
+        <script type="text/javascript" src="directives/router.js"></script>
+        <script type="text/javascript" src="controllers/accueilCtrl.js"></script>
+        <script type="text/javascript" src="controllers/assoCtrl.js"></script>
+        <script type="text/javascript" src="controllers/calendarCtrl.js"></script>
+        <script type="text/javascript" src="controllers/contactCtrl.js"></script>
+        <script type="text/javascript" src="controllers/ourchallengeCtrl.js"></script>
+        <script type="text/javascript" src="controllers/trainingCtrl.js"></script>
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+        <link href="css/bootstrap-social.css" rel="stylesheet">
+        <link href="css/body.css" rel="stylesheet">
+        <link href="css/navbar.css" rel="stylesheet">
+    </head>
+        
+<body>
+            
+    <div>
+        <div>
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <div class="container">
+                    <div class=nav-primary>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#/accueil">Accueil<span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#/asso">L'association</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#/training">Les entrainements</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#/ourchallenge">Notre CaniCross</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#/calendar">Calendrier des CaniCross</a>
+                                </li>
+                                        
+                                <a class="btn btn-primary btn-contact" href="#/contact">contact</a>
+                                        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+                
+        <div ng-view>
+        </div>
+                
+    </div>
+        
+        
+</body>
+</html>
